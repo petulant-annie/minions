@@ -1,4 +1,4 @@
-Welcome to the One In A Minion App!
+Welcome to the "One In A Minion" App!
 
 This is a graduation ReactJS project!
 We want to introduce such games as Hangman, Barley Break and Find A Match,
