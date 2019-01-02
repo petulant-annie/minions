@@ -7,6 +7,7 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "sweetalert": "^2.1.2",
+    "workbox-cli": "^3.6.3",
     "workbox-sw": "^3.6.3"
   },
   "name": "minions",
