@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130433138-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130433138-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffe520">
+    <meta name="Description" content="This is a graduation ReactJS project! We want to introduce such games as Hangman, Barley Break and Find A Match, with the design based on 'The Despicable Me' movie characters: Minions!">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to ONE IN A MINION!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/icons/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="../assets/icons/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="../assets/icons/icon-128x128.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/icons/icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="../assets/icons/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="../assets/icons/icon-72x72.png">
+</head>
+
+<body>
+    <noscript>
+        <p>Your browser does not support scripts :(</p>
+    </noscript>
+    <div class="wrapper">
+        <div id="root">
+            <div class="preloader">
+                <div class="container">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                    <span class="line line-4"></span>
+                    <span class="line line-5"></span>
+                    <span class="line line-6"></span>
+                    <span class="line line-7"></span>
+                    <span class="line line-8"></span>
+                    <span class="line line-9"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img id="qrcode" src="../assets/qrcode.svg" alt="QRCode" width="150" height="150">
+    <script src="./index.jsx"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js', { scope: '/minions/' });
+        };
+    </script>
+</body>
+
+</html>
